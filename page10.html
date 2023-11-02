@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML Page</title>
+</head>
+<body>
+<style>
+    .container{
+        display: flex;
+        width: 600px;
+        margin: 20px auto;
+        height: 400px;
+        background: #d9da3e;
+    }
+    #content1{
+        padding: 10px;
+        width: 80%;
+        height: 100%;
+
+    }
+
+    #content1 iframe {
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+
+    #sidebar{
+        width: 30%;
+        height: 100%;
+    }
+    ul{
+        list-style: none;
+
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+    li{
+        background: white;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+    .lis{
+        background: black;
+        width: 10%;
+    }
+    a{
+        color: blue;
+        padding: 4px;
+    }
+    h1{
+        text-align: center;
+    }
+</style>
+<div>
+    <h1>Task - 10</h1>
+    <div class="container">
+        <div id="sidebar">
+            <ul>
+                <li><a href="page101.html" target="content1">Home Page</a><div class="lis"></div></li>
+                <li><a href="page102.html" target="content1">Musings</a><div class="lis"></div></li>
+                <li><a href="page103.html" target="content1">My town</a><div class="lis"></div></li>
+                <li><a href="page104.html" target="content1">Links</a><div class="lis"></div></li>
+            </ul>
+        </div>
+        <div id="content1">
+            <iframe name="content1" src="page101.html" frameborder="0"></iframe>
+        </div>
+    </div>
+</div>
+</body>
+</html>
